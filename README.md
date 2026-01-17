@@ -1,44 +1,51 @@
-# Smart File Organizer
-
-Author: **Nawaf**  
-GitHub: [https://github.com/nawaf133](https://github.com/nawaf133)  
-© 2026 Nawaf. All rights reserved.
-
----
-
-## Description
-Smart File Organizer is a **web-based tool** that automatically organizes your files into folders based on their type:  
-
-- **Images** (jpg, png, gif, bmp, jpeg)  
-- **Videos** (mp4, avi, mov, mkv)  
-- **Documents** (pdf, docx, txt, xlsx)  
-- **Archives** (zip, rar, 7z)  
-- **Others** (any other file types)
-
-It comes with a **clean interface**, **Undo feature**, **Progress Bar**, and **Dark Mode**.  
-
----
-
-## Features
-- Organize any folder on your computer with a single click.  
-- Undo the last organization operation.  
-- Dark Mode toggle for better visibility.  
-- Progress bar shows organizing progress.  
-- Logs moved files automatically in `server/log.json`.  
-
----
-
-## Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/nawaf133/smart-file-organizer.git
+Smart File Organizer 🚀
 
 
 
 
 
-Navigate to the project folder:
 
+Smart File Organizer is a fast, lightweight web tool to automatically organize files on your computer into folders by type. Designed to be simple, reliable, and ready for deployment.
+
+⚡ Features
+
+✅ Organize files by type: Images, Videos, Documents, Archives, Others
+
+🧹 Undo last operation to recover files
+
+🌙 Dark Mode toggle for comfortable viewing
+
+📊 Progress bar shows organizing progress
+
+🗂 Automatic folder creation for each file category
+
+🖥 Works on Windows, Mac, and Linux
+
+🔒 Privacy-focused: all operations are local on your computer
+
+📝 Usage
+
+Organize files:
+
+1. Enter the folder path in the input field
+2. Click "Organize Files"
+3. Wait for the progress bar to complete
+
+
+Undo last operation:
+
+1. Click "Undo Last" to revert the previous organization
+
+
+Dark Mode:
+
+1. Toggle the "Dark Mode" checkbox to switch themes
+
+⚙️ Installation
+
+Clone the repository:
+
+git clone https://github.com/nawaf133/smart-file-organizer.git
 cd smart-file-organizer
 
 
@@ -47,52 +54,42 @@ Install dependencies:
 npm install
 
 
-Start the server:
+Run the application:
 
 npm start
 
 
-Open your browser at http://localhost:3000
+Open your browser at:
 
-How to Use
+http://localhost:3000
 
-Enter the folder path you want to organize.
+🖥 Supported Platforms
 
-Click Organize Files to organize all files.
+Windows
 
-To undo the last operation, click Undo Last.
+MacOS
 
-Use the Dark Mode checkbox to switch themes.
+Linux
 
-File Structure
-smart-file-organizer/
-│
-├── server/
-│   ├── index.js          # Server + API
-│   ├── fileOrganizer.js  # File organizing logic
-│   └── log.json          # Stores logs for undo feature
-│
-├── client/
-│   ├── index.html        # User interface
-│   ├── app.js            # Frontend JS
-│   └── styles.css        # Styling
-│
-├── package.json
-└── README.md
+Make sure the folder path format is correct for your OS.
 
-Screenshots
+🧾 Ownership & License
 
-(Add your own screenshots here after testing the project)
+Developed and maintained by Nawaf
+GitHub: https://github.com/nawaf133
 
-License
+Licensed under the MIT License – free to use and modify, but original credit must remain.
 
-© 2026 Nawaf. All rights reserved.
-This project is developed and maintained by Nawaf.
+🎯 Notes
 
-Notes
+All file operations are local; nothing is sent over the internet.
 
-Works on Windows, Mac, and Linux (ensure the folder path format is correct).
+Large folders may take longer depending on the number of files.
 
-The project is 100% yours, all rights belong to Nawaf.
+Logs of moved files are stored in server/log.json for undo functionality.
 
-You can further customize categories or interface colors as you like.
+Dark Mode and progress bar improve UX but can be customized.
+
+Keep your folder paths correct to avoid errors.
+
+💡 Made with ❤️ by Nawaf for simple, efficient, and practical file organization.
