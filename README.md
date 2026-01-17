@@ -1,37 +1,36 @@
 # Smart File Organizer 📂
 
-[![Python](https://img.shields.io/badge/Python-3.9+-blue)](https://www.python.org/)
-[![Discord.py](https://img.shields.io/badge/Discord.py-2.3.2-blue)](https://discordpy.readthedocs.io/)
+[![Python](https://img.shields.io/badge/Python-3.9+-blue?logo=python&logoColor=white)](https://www.python.org/) 
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/nawaf133/smart-file-organizer?style=social)](https://github.com/nawaf133/smart-file-organizer/stargazers)
 
-**Smart File Organizer** is a fast, lightweight Discord bot that automatically organizes and sorts files in your directories or server channels using slash commands. Designed to be simple, reliable, and ready for deployment.
+**Smart File Organizer** is a **fast, lightweight, and intelligent file management tool** that automatically organizes your files based on type, date, or custom rules. Perfect for keeping your system tidy and efficient.  
 
 ---
 
 ## ⚡ Features
 
-- ✅ Slash command support for easy interaction
-- 📁 Automatic file sorting by type, date, or custom rules
-- 📩 DM notifications when organization tasks are complete
-- 🧹 Optional cleanup of duplicate or unnecessary files
-- 🌐 Works with local directories or cloud storage links
-- 🛠 Lightweight and easy to deploy anywhere
-- 🔒 Privacy-focused: Only accesses files you allow
+- ✅ **Automatic File Sorting** – Organize files by type, date, or your own rules  
+- 🧹 **Duplicate & Unnecessary File Cleanup** – Keep your folders clutter-free  
+- 📁 **Local & Cloud Support** – Organize local directories or cloud storage (optional)  
+- 🛠 **Lightweight & Fast** – Minimal dependencies, works on any system  
+- 🔒 **Privacy First** – Accesses only the files you allow  
 
 ---
 
-## 📝 Commands
+## 📝 Quick Start
 
-| Command           | Description                                   |
-|------------------|-----------------------------------------------|
-| `/organize`       | Automatically sort files in a folder or channel |
-| `/status`         | Check bot status and last organization task  |
-| `/setrules`       | Customize file organization rules             |
+### Example Usage:
 
-**Example usage:**
 ```bash
-/organize path:/Users/Nawaf/Downloads method:type
+organizer --path "/Users/Nawaf/Downloads" --method "type"
 
+Options:
+
+Option	Description
+--path	Folder path to organize
+--method	Sorting method: type, date, or custom rules
+--rules	Load a JSON or YAML file with custom organization rules
 ⚙️ Installation
 
 Clone the repository:
@@ -45,37 +44,37 @@ Install dependencies:
 pip install -r requirements.txt
 
 
-Create a .env file in the project root:
+Run the program:
 
-DISCORD_TOKEN=YOUR_BOT_TOKEN_HERE
-
-
-Run the bot:
-
-python bot.py
+python organizer.py --path "/Your/Folder/Path" --method "type"
 
 
-💡 Make sure Python 3.9+ is installed on your system for full functionality.
+💡 Tip: Python 3.9+ is required.
 
 🖥 Supported Platforms
 
-Local directories on your system
+Windows, macOS, Linux
 
-Cloud storage links (optional, if integrated)
+Local directories
 
-Discord channels (downloads or attachments)
+Cloud storage (optional integration)
 
 🧾 Ownership & License
 
 Developed and maintained by @_I42
-Licensed under the MIT License – free to use and modify, but original credit must remain.
+
+Licensed under the MIT License – Free to use, modify, and distribute. Original credit must remain.
 
 🎯 Notes
 
-Users must have DMs enabled to receive notifications.
+Large directories may take longer depending on file count
 
-Large folders may take longer depending on number of files.
+Operations are logged for safety and can be optionally reversed
 
-All operations are logged and optionally reversible for safety.
+Custom rules allow full control over file organization
 
-Made with ❤️ for simple, efficient, and practical file organization on Discord.
+🚀 Screenshot / Demo (Optional)
+
+Add screenshots or GIFs showing the program in action for a professional touch.
+
+Made with ❤️ for clean, efficient, and practical file organization.
