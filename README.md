@@ -75,6 +75,5 @@ Custom rules allow full control over file organization
 
 🚀 Screenshot / Demo (Optional)
 
-Add screenshots or GIFs showing the program in action for a professional touch.
-
 Made with ❤️ for clean, efficient, and practical file organization.
+
