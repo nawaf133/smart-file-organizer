@@ -1,45 +1,36 @@
-Smart File Organizer 🚀
+# Smart File Organizer 📂
 
+[![Python](https://img.shields.io/badge/Python-3.9+-blue)](https://www.python.org/)
+[![Discord.py](https://img.shields.io/badge/Discord.py-2.3.2-blue)](https://discordpy.readthedocs.io/)
+[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
+**Smart File Organizer** is a fast, lightweight Discord bot that automatically organizes and sorts files in your directories or server channels using slash commands. Designed to be simple, reliable, and ready for deployment.
 
+---
 
+## ⚡ Features
 
+- ✅ Slash command support for easy interaction
+- 📁 Automatic file sorting by type, date, or custom rules
+- 📩 DM notifications when organization tasks are complete
+- 🧹 Optional cleanup of duplicate or unnecessary files
+- 🌐 Works with local directories or cloud storage links
+- 🛠 Lightweight and easy to deploy anywhere
+- 🔒 Privacy-focused: Only accesses files you allow
 
-Smart File Organizer is a fast, lightweight web tool to automatically organize files on your computer into folders by type. Designed to be simple, reliable, and ready for deployment.
+---
 
-⚡ Features
+## 📝 Commands
 
-✅ Organize files by type: Images, Videos, Documents, Archives, Others
+| Command           | Description                                   |
+|------------------|-----------------------------------------------|
+| `/organize`       | Automatically sort files in a folder or channel |
+| `/status`         | Check bot status and last organization task  |
+| `/setrules`       | Customize file organization rules             |
 
-🧹 Undo last operation to recover files
-
-🌙 Dark Mode toggle for comfortable viewing
-
-📊 Progress bar shows organizing progress
-
-🗂 Automatic folder creation for each file category
-
-🖥 Works on Windows, Mac, and Linux
-
-🔒 Privacy-focused: all operations are local on your computer
-
-📝 Usage
-
-Organize files:
-
-1. Enter the folder path in the input field
-2. Click "Organize Files"
-3. Wait for the progress bar to complete
-
-
-Undo last operation:
-
-1. Click "Undo Last" to revert the previous organization
-
-
-Dark Mode:
-
-1. Toggle the "Dark Mode" checkbox to switch themes
+**Example usage:**
+```bash
+/organize path:/Users/Nawaf/Downloads method:type
 
 ⚙️ Installation
 
@@ -51,45 +42,40 @@ cd smart-file-organizer
 
 Install dependencies:
 
-npm install
+pip install -r requirements.txt
 
 
-Run the application:
+Create a .env file in the project root:
 
-npm start
+DISCORD_TOKEN=YOUR_BOT_TOKEN_HERE
 
 
-Open your browser at:
+Run the bot:
 
-http://localhost:3000
+python bot.py
+
+
+💡 Make sure Python 3.9+ is installed on your system for full functionality.
 
 🖥 Supported Platforms
 
-Windows
+Local directories on your system
 
-MacOS
+Cloud storage links (optional, if integrated)
 
-Linux
-
-Make sure the folder path format is correct for your OS.
+Discord channels (downloads or attachments)
 
 🧾 Ownership & License
 
-Developed and maintained by Nawaf
-GitHub: https://github.com/nawaf133
-
+Developed and maintained by @_I42
 Licensed under the MIT License – free to use and modify, but original credit must remain.
 
 🎯 Notes
 
-All file operations are local; nothing is sent over the internet.
+Users must have DMs enabled to receive notifications.
 
-Large folders may take longer depending on the number of files.
+Large folders may take longer depending on number of files.
 
-Logs of moved files are stored in server/log.json for undo functionality.
+All operations are logged and optionally reversible for safety.
 
-Dark Mode and progress bar improve UX but can be customized.
-
-Keep your folder paths correct to avoid errors.
-
-💡 Made with ❤️ by Nawaf for simple, efficient, and practical file organization.
+Made with ❤️ for simple, efficient, and practical file organization on Discord.
